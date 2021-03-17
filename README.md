@@ -4,7 +4,7 @@ Please view the Password Generator Project Here: [Password Generator Project](ht
 
 ## Description
 
-As it suggests, thet task is to make an interactive Password Generator when the user presses the "Generate Password" button. By default, the JavaScript functionality does not work and the task is to make so that when the "Generate Password" button is pressed, it will create a random password as per the user's number of character and character-type choices.
+As it suggests, thet task is to make an interactive Password Generator when the user presses the "Generate Password" button. By default, the JavaScript functionality does not work. The task is to make is so when the "Generate Password" button is pressed, it will create a random password between 8 ~ 128 characters containing lower case, upper case, number and/or special character-type choices as determined by the user.
 
 ## Table of Contents (Optional)
 
@@ -28,6 +28,7 @@ git clone git@github.com:leonhsu95/password-generator-project.git"
 
 This landing page is a mockup and can be used and tested freely. If testing, please save a copy of the original files and edit on the copied file.
 The website mockup should look like this:
+
  ![Password Generator Default](assets/screenshots/screenshot.png)
  ![Password Generator Function Activated](assets/screenshots/screenshot2.png)
  ![Password generated with only uppercase, number and special characters selected](assets/screenshots/screenshot3.png)
