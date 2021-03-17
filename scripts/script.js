@@ -8,7 +8,7 @@ var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChar = [" ", "!", "\"", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 
 function writePassword(){
-  var generatePassword = prompt("How many charcters between 8-128 would you like your password to be?");
+  var generatePassword = prompt("How many characters between 8-128 would you like your password to be?");
 
   if (!generatePassword) {
     var cancel = confirm("Cancel Password Generation?");
@@ -18,20 +18,39 @@ function writePassword(){
       return;
     }
     else {
-      var generatePassword = prompt("How many charcters between 8-128 would you like your password to be?");
+      writePassword();
     }
   }
-  else if (generatePassword < 8 || generatePassword > 128 ) {
-    alert("Password length must be between 8-128 characters. Try again");
-    var generatePassword = prompt("How many charcters between 8-128 would you like your password to be?");
-    
+  else if (isNaN(generatePassword)) {
+    alert("Invalid number entered.");
+    return;
   }
-  else {
-    alert("Your password will have "+generatePassword+" characters.");
-    
+  else if (generatePassword < 8 || generatePassword > 128 ) {
+    alert("Password length must be between 8-128 characters.");
+    return;
   }
   
+  alert("Your password will have "+generatePassword+" characters.");
+
+  //Confirm if user wants certain character type variables
+  var confirmLowerCase = confirm("Click OK to confirm if you would like to include lower case characters.");
+  var confirmUpperCase = confirm("Click OK to confirm if you would like to include upper case characters.");
+  var confirmNumber = confirm("Click OK to confirm if you would like to include numbers.");    
+  var confirmSpecialChar = confirm("Click OK to confirm if you would like to include special characters.");
+    
+  while (!confirmLowerCase && !confirmUpperCase && !confirmNumber && !confirmSpecialChar) {
+    alert("You must choose at least one type of character.");
+    var confirmLowerCase = confirm("Click OK to confirm if you would like to include lower case characters.");
+    var confirmUpperCase = confirm("Click OK to confirm if you would like to include upper case characters.");
+    var confirmNumber = confirm("Click OK to confirm if you would like to include numbers.");    
+    var confirmSpecialChar = confirm("Click OK to confirm if you would like to include special characters.");
+  } 
+  
+  
+  
 };
+
+
 
 // Write password to the #password input
 /*function writePassword() {
