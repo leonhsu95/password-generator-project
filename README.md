@@ -34,7 +34,7 @@ The website mockup should look like this:
 
 ## Credits
 
-All resources were provided by "University of Sydney Bootcamp" by Kory Porter [GitLab Repo](https://sydney.bootcampcontent.com/university-of-sydney/usyd-syd-fsf-pt-02-2021-u-c), and refactoring by Leon Hsu.
+All resources were provided by "University of Sydney Bootcamp" by Kory Porter in [GitLab Repo](https://sydney.bootcampcontent.com/university-of-sydney/usyd-syd-fsf-pt-02-2021-u-c), and coded by Leon Hsu.
 
 ## License
 
@@ -60,9 +60,10 @@ SOFTWARE.
 
 ## Features
 
-- Header Navigation Bar is now functional. Snaps to webpage content.
-- Website Refactored to appropriate semantic elements to increases SEO.
+- If the user registers enters nothing or not a number, the function will restart until the user enters a number.
+- If user enters a decimal number, it will be rounded to an integer.
+- Special Characters does not contain a " " character. 
 
 ## Tests
 
-Website is W3 HTML validated [HTML Markup Validation Tool](https://validator.w3.org/), CSS validated [CSS Validation Service](https://jigsaw.w3.org/css-validator/) and JS Validated [JS Validation Service](https://jshint.com/).
+Website is validated with [HTML Markup Validation Tool](https://validator.w3.org/), [CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [JS Validation Service](https://jshint.com/).
