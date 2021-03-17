@@ -1,4 +1,4 @@
-# <Password Generator Project>
+# <Password_Generator_Project>
 
 Please view the Password Generator Project Here: [Password Generator Project](https://leonhsu95.github.io/password-generator-project/)
 
