@@ -1,4 +1,4 @@
-# <Horiseon_Mockup>
+# <Password Generator Project>
 
 Please view the Password Generator Project Here: [Password Generator Project](https://leonhsu95.github.io/password-generator-project/)
 
