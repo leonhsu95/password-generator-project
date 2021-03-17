@@ -6,7 +6,7 @@ Please view the Password Generator Project Here: [Password Generator Project](ht
 
 As it suggests, thet task is to make an interactive Password Generator when the user presses the "Generate Password" button. By default, the JavaScript functionality does not work. The task is to make is so when the "Generate Password" button is pressed, it will create a random password between 8 ~ 128 characters containing lower case, upper case, number and/or special character-type choices as determined by the user.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
